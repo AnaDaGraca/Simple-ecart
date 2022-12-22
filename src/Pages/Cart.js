@@ -56,7 +56,7 @@ const Cart = () => {
                         className={`${theme? 'bg-light-black text-light' : 'bg-light text-balck'} justify-content-center w-100`}
                     >
                         <Col className="py-2">
-                            <h4>Preço total: R$ {cartTotal}</h4>
+                            <h4>Preço total: R$ {Math.round(cartTotal*100)/100}</h4>
                         </Col>
                         <Col className="p-0" md={4}>
                             <Button variant="danger"
