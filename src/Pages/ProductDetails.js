@@ -58,7 +58,7 @@ const ProductDetails = (props) => {
                         style={{borderRadius: '0', border: 0}}
                     >
                         <BsCartPlus size="1.8rem"/>
-                        Adicinior ao carrinho
+                        Adicionar ao carrinho
                     </Button>
                     <br/>
                     <b className={`${theme? 'text-dark-primary' : 'text-light-primary'} h4 mt-3 d-block`}>

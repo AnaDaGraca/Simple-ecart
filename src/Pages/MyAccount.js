@@ -14,7 +14,7 @@ const MyAccount = () => {
     const [theme] = useThemeHook();
     return (
         <Container className="py-5 mt-5">
-            <Heading heading="My Account" />
+            <Heading heading="Minha conta" />
             <Tab.Container defaultActiveKey="my-orders">
                 <Row className="justify-content-evenly mt-4 p-1">
                      <Col sm={3} className={`${theme? 'text-light bg-dark' : 'text-black bg-light'} p-2 rounded h-100 mb-3 user-menu`}>
@@ -57,16 +57,16 @@ const MyAccount = () => {
                      <Col sm={8} className={`${theme? 'text-light bg-dark' : 'text-black bg-light'} p-2 rounded`}>
                         <Tab.Content>
                             <Tab.Pane eventKey="my-orders">
-                                <Heading heading="My Orders" size="h3" />
+                                <Heading heading="Meus pedidos" size="h3" />
                                 <OrderCard 
-                                    orderDate="24 Jun, 2022" 
+                                    orderDate="24 Dez, 2022" 
                                     orderId="1234" 
                                     title="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
                                     img="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
                                     deliveredDate="05 July, 2022"
                                 />
                                 <OrderCard 
-                                    orderDate="24 Jun, 2022" 
+                                    orderDate="24 Dez, 2022" 
                                     orderId="1334" 
                                     title="Mens Casual Premium Slim Fit T-Shirts"
                                     img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
@@ -74,13 +74,13 @@ const MyAccount = () => {
                                 />
                             </Tab.Pane>
                             <Tab.Pane eventKey="account-details">
-                                <Heading heading="Account details" size="h3" />
+                                <Heading heading="Detalhes da conta" size="h3" />
                             </Tab.Pane>
                             <Tab.Pane eventKey="address">
-                                <Heading heading="Address" size="h3" />
+                                <Heading heading="Endereço" size="h3" />
                             </Tab.Pane>
                             <Tab.Pane eventKey="wallet">
-                                <Heading heading="Wallet" size="h3" />
+                                <Heading heading="Carteira" size="h3" />
                             </Tab.Pane>
                         </Tab.Content>
                      </Col>
