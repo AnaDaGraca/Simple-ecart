@@ -17,7 +17,7 @@ const ProductDetails = (props) => {
     },[]);
 
     const getResponse = async()=>{
-        const res = await fetch(`https://fakestoreapi.com/products/${props.productId}`)
+        const res = await fetch(`j${props.productId}`)
                           .then(res=> res.json());
                           setProductData(await res);
     }
